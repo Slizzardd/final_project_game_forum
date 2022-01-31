@@ -1,0 +1,189 @@
+07:34:46.861 [http-nio-8080-exec-6] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+07:34:46.872 [http-nio-8080-exec-6] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+07:34:46.892 [http-nio-8080-exec-6] info - USER WITH EMAIL:artemdubenko2003@gmail.com LOGGED IN
+07:34:50.743 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+07:34:50.930 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+07:34:51.840 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+07:34:52.045 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+07:35:21.622 [http-nio-8080-exec-5] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+07:35:21.633 [http-nio-8080-exec-5] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+07:35:21.645 [http-nio-8080-exec-5] info - USER WITH EMAIL:artemdubenko2003@gmail.comLOGGED IN
+07:35:38.367 [http-nio-8080-exec-7] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+07:35:38.375 [http-nio-8080-exec-7] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:11:47.393 [http-nio-8080-exec-6] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:11:47.402 [http-nio-8080-exec-6] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:19:42.501 [main] info - CREATED USER(EMAIL)dru0@gmail.com
+08:21:16.890 [main] info - CREATED USER(EMAIL)dru0@gmail.com
+08:21:17.047 [main] info - SEND MAIL FOR USER(EMAIL):dru0@gmail.comCHARS:P2FP9zjkpsXAX3ob4xbdjZJRhzDOkbXDecvUt4DyBAvUImZzfzR3RRh8OiiLhffHcCeMBQJDbOKTPL9l6U2eaeyKxEgDx46mFagO
+08:21:18.846 [main] info - CREATED USER(EMAIL)dru1@gmail.com
+08:21:18.914 [main] info - SEND MAIL FOR USER(EMAIL):dru1@gmail.comCHARS:gUbVRP8T0dvnDdhFnvftNniVlAMQlQgE0SXLHqLIYskzcBDHmHTHskDXabvvyZA71oGjdmwjgvQWiukVdtjwSpYfcGfAMkzmgnnW
+08:21:20.260 [main] info - CREATED USER(EMAIL)dru2@gmail.com
+08:21:20.327 [main] info - SEND MAIL FOR USER(EMAIL):dru2@gmail.comCHARS:gC9KHpc1jNROLTYfPmhxpmLfpKZdQ6RSneTCjF5GQpH0iqxAFYt5lFdJpHlLuZVKqtApPTjxQkq7zRqG1YJpeuaReKg1cbZxICxx
+08:21:21.783 [main] info - CREATED USER(EMAIL)dru3@gmail.com
+08:21:21.850 [main] info - SEND MAIL FOR USER(EMAIL):dru3@gmail.comCHARS:UTaDSBWqVyXV8K1evlkEkVGDDw86V3ScQrPwiscRTp8PgZWXvX5eZmQsrCTrPHyLM1zBNbExprpG8u1jDcgbOaSOASV5prN2ZVv9
+08:21:23.194 [main] info - CREATED USER(EMAIL)dru4@gmail.com
+08:21:23.264 [main] info - SEND MAIL FOR USER(EMAIL):dru4@gmail.comCHARS:3BPi5SHICYMwsOW0VpGIoR5TJrl4S9yNEidX1Yydwix4BN9Y3s5t1Tk6Kgv92Cjz90h4v5NNsv6LrqCnLU4HzgnuGLPeLEte6dZg
+08:36:11.858 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:36:11.867 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:36:13.013 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:36:13.022 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:36:13.034 [http-nio-8080-exec-1] info - USER WITH EMAIL:artemdubenko2003@gmail.com LOGGED IN
+08:36:40.082 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:36:40.092 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:37:51.571 [http-nio-8080-exec-2] info - USER WITH EMAIL:artemdubenko2003@gmail.com LOGGED IN
+08:38:06.607 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:38:06.622 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:38:07.298 [http-nio-8080-exec-7] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:38:07.308 [http-nio-8080-exec-7] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:38:07.319 [http-nio-8080-exec-7] info - USER WITH EMAIL:artemdubenko2003@gmail.com LOGGED IN
+08:38:29.937 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:38:29.942 [http-nio-8080-exec-2] info - GET LAST IMAGE INDEX
+08:38:30.114 [http-nio-8080-exec-2] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/1/1big.jpg
+08:40:13.651 [http-nio-8080-exec-6] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:40:13.660 [http-nio-8080-exec-6] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:40:14.366 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:40:14.374 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:40:14.386 [http-nio-8080-exec-2] info - USER WITH EMAIL:artemdubenko2003@gmail.com LOGGED IN
+08:40:35.552 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:40:35.557 [http-nio-8080-exec-4] info - GET LAST IMAGE INDEX
+08:40:35.689 [http-nio-8080-exec-4] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/1/1big.jpg
+08:42:35.402 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:42:35.407 [http-nio-8080-exec-1] info - GET LAST IMAGE INDEX
+08:42:35.782 [http-nio-8080-exec-1] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/2/2big.jpg
+08:42:57.046 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:42:57.051 [http-nio-8080-exec-8] info - GET LAST IMAGE INDEX
+08:42:57.405 [http-nio-8080-exec-8] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/3/3big.jpg
+08:43:03.652 [http-nio-8080-exec-7] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:43:03.656 [http-nio-8080-exec-7] info - GET LAST IMAGE INDEX
+08:43:04.062 [http-nio-8080-exec-7] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/4/4big.jpg
+08:43:08.733 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:43:08.738 [http-nio-8080-exec-4] info - GET LAST IMAGE INDEX
+08:43:09.218 [http-nio-8080-exec-4] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/5/5big.jpg
+08:43:15.316 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:43:15.322 [http-nio-8080-exec-2] info - GET LAST IMAGE INDEX
+08:43:15.746 [http-nio-8080-exec-2] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/6/6big.jpg
+08:43:20.740 [http-nio-8080-exec-3] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:43:20.744 [http-nio-8080-exec-3] info - GET LAST IMAGE INDEX
+08:43:21.026 [http-nio-8080-exec-3] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/7/7big.jpg
+08:43:25.312 [http-nio-8080-exec-6] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:43:25.315 [http-nio-8080-exec-6] info - GET LAST IMAGE INDEX
+08:43:25.681 [http-nio-8080-exec-6] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/8/8big.jpg
+08:43:32.986 [http-nio-8080-exec-9] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:43:32.990 [http-nio-8080-exec-9] info - GET LAST IMAGE INDEX
+08:43:33.353 [http-nio-8080-exec-9] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/9/9big.jpg
+08:43:38.946 [http-nio-8080-exec-5] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:43:38.951 [http-nio-8080-exec-5] info - GET LAST IMAGE INDEX
+08:43:39.296 [http-nio-8080-exec-5] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/10/10big.jpg
+08:43:49.340 [http-nio-8080-exec-10] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:43:49.344 [http-nio-8080-exec-10] info - GET LAST IMAGE INDEX
+08:43:49.470 [http-nio-8080-exec-10] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/11/11big.png
+08:44:00.303 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:44:00.308 [http-nio-8080-exec-1] info - GET LAST IMAGE INDEX
+08:44:00.403 [http-nio-8080-exec-1] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/12/12big.png
+08:44:07.531 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:44:07.545 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:44:07.603 [http-nio-8080-exec-8] info - USER WITH EMAIL:artemdubenko2003@gmail.com LOGGED IN
+08:44:18.137 [http-nio-8080-exec-9] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:44:18.140 [http-nio-8080-exec-9] info - GET LAST IMAGE INDEX
+08:44:18.252 [http-nio-8080-exec-9] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/13/13big.png
+08:44:23.685 [http-nio-8080-exec-5] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:44:23.688 [http-nio-8080-exec-5] info - GET LAST IMAGE INDEX
+08:44:23.788 [http-nio-8080-exec-5] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/14/14big.png
+08:44:28.412 [http-nio-8080-exec-10] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:44:28.416 [http-nio-8080-exec-10] info - GET LAST IMAGE INDEX
+08:44:28.545 [http-nio-8080-exec-10] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/15/15big.png
+08:44:42.348 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:44:42.351 [http-nio-8080-exec-8] info - GET LAST IMAGE INDEX
+08:44:42.454 [http-nio-8080-exec-8] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/16/16big.png
+08:44:48.047 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:44:48.050 [http-nio-8080-exec-1] info - GET LAST IMAGE INDEX
+08:44:48.183 [http-nio-8080-exec-1] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/17/17big.png
+08:44:52.271 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:44:52.275 [http-nio-8080-exec-4] info - GET LAST IMAGE INDEX
+08:44:52.502 [http-nio-8080-exec-4] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/18/18big.png
+08:45:00.741 [http-nio-8080-exec-7] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:45:00.745 [http-nio-8080-exec-7] info - GET LAST IMAGE INDEX
+08:45:00.949 [http-nio-8080-exec-7] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/19/19big.png
+08:45:13.066 [http-nio-8080-exec-10] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:45:13.069 [http-nio-8080-exec-10] info - GET LAST IMAGE INDEX
+08:45:13.187 [http-nio-8080-exec-10] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/20/20big.png
+08:45:20.349 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:45:20.353 [http-nio-8080-exec-8] info - GET LAST IMAGE INDEX
+08:45:20.385 [http-nio-8080-exec-8] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/21/21big.jpg
+08:45:32.255 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:45:32.259 [http-nio-8080-exec-1] info - GET LAST IMAGE INDEX
+08:45:32.307 [http-nio-8080-exec-1] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/22/22big.png
+08:45:38.737 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:45:38.741 [http-nio-8080-exec-4] info - GET LAST IMAGE INDEX
+08:45:38.870 [http-nio-8080-exec-4] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/23/23big.png
+08:45:47.499 [http-nio-8080-exec-7] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:45:47.502 [http-nio-8080-exec-7] info - GET LAST IMAGE INDEX
+08:45:47.632 [http-nio-8080-exec-7] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/24/24big.png
+08:45:55.792 [http-nio-8080-exec-3] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:45:55.797 [http-nio-8080-exec-3] info - GET LAST IMAGE INDEX
+08:45:55.941 [http-nio-8080-exec-3] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/25/25big.png
+08:46:04.427 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:46:04.430 [http-nio-8080-exec-2] info - GET LAST IMAGE INDEX
+08:46:04.473 [http-nio-8080-exec-2] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/26/26big.png
+08:46:10.619 [http-nio-8080-exec-5] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:46:10.622 [http-nio-8080-exec-5] info - GET LAST IMAGE INDEX
+08:46:10.732 [http-nio-8080-exec-5] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/27/27big.png
+08:46:19.077 [http-nio-8080-exec-6] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:46:19.080 [http-nio-8080-exec-6] info - GET LAST IMAGE INDEX
+08:46:19.206 [http-nio-8080-exec-6] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/28/28big.png
+08:46:28.365 [http-nio-8080-exec-9] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+08:46:28.368 [http-nio-8080-exec-9] info - GET LAST IMAGE INDEX
+08:46:28.486 [http-nio-8080-exec-9] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/29/29big.png
+09:02:27.792 [http-nio-8080-exec-7] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:27.831 [http-nio-8080-exec-7] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:28.421 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:30.780 [http-nio-8080-exec-10] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:32.453 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:33.960 [http-nio-8080-exec-5] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:35.468 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:37.538 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:53.182 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:55.628 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:55.632 [http-nio-8080-exec-8] info - USER(USER_ID): 1LIKES POST11
+09:02:56.627 [http-nio-8080-exec-6] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:02:56.631 [http-nio-8080-exec-6] info - USER(USER_ID): 1LIKES POST11
+09:05:53.869 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:05:53.938 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:05:55.734 [http-nio-8080-exec-3] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:06:06.219 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:06:24.568 [http-nio-8080-exec-9] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:06:24.944 [http-nio-8080-exec-5] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:06:29.359 [http-nio-8080-exec-1] info - UPDATED IMAGE(IMAGE_ID): 1
+09:06:32.663 [http-nio-8080-exec-9] info - DELETE IMAGE(IMAGE_ID): 1
+09:06:32.663 [http-nio-8080-exec-9] info - DELETE ALL RELATION FOR IMAGE
+09:06:32.673 [http-nio-8080-exec-9] info - UPDATED IMAGE(IMAGE_ID): 1
+09:06:33.931 [http-nio-8080-exec-6] info - DELETE IMAGE(IMAGE_ID): 2
+09:06:33.931 [http-nio-8080-exec-6] info - DELETE ALL RELATION FOR IMAGE
+09:06:33.942 [http-nio-8080-exec-6] info - UPDATED IMAGE(IMAGE_ID): 2
+09:06:35.203 [http-nio-8080-exec-5] info - DELETE IMAGE(IMAGE_ID): 3
+09:06:35.203 [http-nio-8080-exec-5] info - DELETE ALL RELATION FOR IMAGE
+09:06:35.214 [http-nio-8080-exec-5] info - UPDATED IMAGE(IMAGE_ID): 3
+09:06:36.933 [http-nio-8080-exec-9] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:06:36.989 [http-nio-8080-exec-9] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:10:15.559 [http-nio-8080-exec-9] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:10:15.627 [http-nio-8080-exec-9] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:10:16.265 [http-nio-8080-exec-10] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:10:16.327 [http-nio-8080-exec-10] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:10:16.396 [http-nio-8080-exec-10] info - USER WITH EMAIL:artemdubenko2003@gmail.com LOGGED IN
+09:10:31.611 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:10:31.614 [http-nio-8080-exec-8] info - GET LAST IMAGE INDEX
+09:10:32.011 [http-nio-8080-exec-8] info - CREATE IMAGE(BIG_PATH):D:/Game_Forums/src/main/resources/static/files/30/30big.jpg
+09:10:51.676 [http-nio-8080-exec-3] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:10:51.731 [http-nio-8080-exec-3] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:10:53.991 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:10:54.046 [http-nio-8080-exec-1] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:10:54.111 [http-nio-8080-exec-1] info - USER WITH EMAIL:artemdubenko2003@gmail.com LOGGED IN
+09:20:28.268 [http-nio-8080-exec-3] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:20:28.337 [http-nio-8080-exec-3] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:20:29.394 [http-nio-8080-exec-5] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:20:29.742 [http-nio-8080-exec-2] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:20:30.189 [http-nio-8080-exec-4] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:20:30.531 [http-nio-8080-exec-8] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:20:33.378 [http-nio-8080-exec-9] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:20:33.425 [http-nio-8080-exec-9] info - FIND USER BY EMAIL: artemdubenko2003@gmail.com
+09:20:33.484 [http-nio-8080-exec-9] info - USER WITH EMAIL:artemdubenko2003@gmail.com LOGGED IN

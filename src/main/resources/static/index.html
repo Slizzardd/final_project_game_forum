@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PrtSc.game</title>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/media-scroll.js"></script>
+  <script src="scripts/swiper.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" href="styles/jquery-ui.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="common-home">
+
+<header id="header">
+  <div class="container">
+    <a href="/" class="logo">PrtSc.game</a>
+
+    <nav>
+      <ul>
+        <li><a href="top.html#users">Топ людей</a></li>
+        <li><a href="top.html#screens">Топ скринов</a></li>
+        <li class="admin" th:classappend="${isAdmin} ? 'true' : 'false'"><a href="admin.html">Админка</a></li>
+      </ul>
+
+      <form class="search" method="post" th:action="@{/search}">
+        <input type="search" placeholder="Search" aria-label="Search" id="imageName" name="query">
+        <button type="submit"></button>
+      </form>
+    </nav>
+
+    <a href="lk.html" class="login load--login" th:classappend="${isLogin} ? 'true' : 'false'">
+      <span class="login_false">Войти</span>
+      <span class="login_true">ЛК</span>
+    </a>
+
+  </div>
+</header>
+
+<main>
+  <div class="container post-wrapper">
+
+    <div class="post" th:data-item="${image.getId()}" th:each="image : ${images.getItems()}">
+      <img th:src="${image.getPathToSmallImage()}" th:alt="${image.getNameGame()}"
+           th:data-img="${image.getPathToBigImage()}">
+      <p th:text="${image.getNameGame()}"></p>
+      <span class="like" th:classappend="|${image.isMeLiked() ? 'liked' : ''} ${isLogin ? 'true' : 'false'}|"
+            th:text="${image.getNumLikes()}"></span>
+    </div>
+
+  </div>
+</main>
+
+
+<script>
+  $(function () {
+    $('.post .like').click(function () {
+      let $this = $(this),
+        num = Number($(this).text());
+
+      $this.addClass('popup');
+      setTimeout(function () {
+        $this.removeClass('popup');
+      }, 400);
+
+      if ($this.hasClass('false')) {
+        return false;
+      } else {
+        if ($this.hasClass('liked')) {
+          $this.removeClass('liked');
+          $this.text(String(num - 1));
+        } else {
+          $this.addClass('liked');
+          $this.text(String(num + 1));
+        }
+
+        $.ajax({
+          type: 'POST',
+          url: '/likes',
+          dataType: 'json',
+          contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+          data: {
+            imageId: $(this).parent().attr('data-item'),
+          },
+          success: function () {
+
+          },
+          error: function (XHR, textStatus) {
+            console.log(XHR, textStatus);
+          }
+        });
+      }
+    });
+
+
+    let flag = true;
+    $(window).on('scroll', function () {
+      let pageHeight = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+      ) - window.innerHeight;
+
+      let numImages = document.getElementsByClassName('post').length
+      if (pageHeight < window.pageYOffset + 300) {
+        if (!flag) {
+          return false
+        }
+        flag = false;
+        $.ajax({
+          type: 'POST',
+          url: '/show_next',
+          dataType: 'html',
+          contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+          data: {numImages: numImages},
+          success: function (data) {
+            $('.post-wrapper').append(data);
+
+          }
+        });
+
+        setTimeout(function () {
+          flag = true;
+        }, 1500);
+      }
+
+    });
+  });
+</script>
+
+</body>
+</html>

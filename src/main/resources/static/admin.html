@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PrtSc.game</title>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/media-scroll.js"></script>
+  <script src="scripts/swiper.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" href="styles/jquery-ui.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+<header id="header">
+  <div class="container">
+    <a href="/" class="logo">PrtSc.game</a>
+
+    <nav>
+      <ul>
+        <li><a href="top.html#users">Топ людей</a></li>
+        <li><a href="top.html#screens">Топ скринов</a></li>
+        <li class="admin" th:classappend="${isAdmin} ? 'true' : 'false'"><a href="admin.html">Админка</a></li>
+      </ul>
+
+      <form class="search" method="post" th:action="@{/search}">
+        <input type="search" placeholder="Search" aria-label="Search" id="imageName" name="query">
+        <button type="submit"></button>
+      </form>
+    </nav>
+
+    <a href="lk.html" class="login load--login" th:classappend="${isLogin} ? 'true' : 'false'">
+      <span class="login_false">Войти</span>
+      <span class="login_true">ЛК</span>
+    </a>
+
+  </div>
+</header>
+
+<main class="common-admin">
+  <div class="container users">
+    <div class="tabs">
+      <div class="tabs-item active" id="users">Люди</div>
+      <div class="tabs-item" id="screens">Скрины</div>
+    </div>
+
+    <div class="table users-tab">
+      <table>
+        <tr>
+          <th class="" data-bd="id">Id</th>
+          <th class="" data-bd="login">Логин</th>
+          <th class="" data-bd="created">Дата регистрации</th>
+          <th class="" data-bd="role">Роль</th>
+          <th class="" data-bd="status">Статус</th>
+          <th>Аватарка</th>
+          <th class="" data-bd="email">email</th>
+          <th class="">Постов</th>
+          <th class="">Лайков на постах</th>
+          <th class="">Поставил лайков</th>
+        </tr>
+
+        <tr th:each="user : ${users.getItems()}">
+          <td th:text="${user.getId()}"></td>
+          <td th:text="${user.getLogin()}"></td>
+          <td th:text="${user.getCreated()}"></td>
+          <td th:text="${user.getRole()}"></td>
+          <td th:text="${user.getStatus()}"></td>
+          <td th:text="${user.getAvatarUrl()}"></td>
+          <td th:text="${user.getEmail()}"></td>
+          <td th:text="${user.getNumImages()}"></td>
+          <td th:text="${user.getNumLikes()}"></td>
+          <td th:text="${user.getNumberLikesReceiver()}"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="table screens-tab">
+      <table>
+        <tr>
+          <th class="" data-bd="id">Id</th>
+          <th class="" data-bd="created">Дата</th>
+          <th class="" data-bd="status">Статус</th>
+          <th class="">Лайки</th>
+          <th class="" data-bd="name_game">Тег</th>
+          <th>Картинка</th>
+          <th></th>
+        </tr>
+
+        <tr th:each="image : ${images.getItems()}">
+          <td th:text="${image.getId()}"></td>
+          <td th:text="${image.getCreated()}"></td>
+          <td th:text="${image.getStatus()}"></td>
+          <td th:text="${image.getNumLikes()}"></td>
+          <td th:text="${image.getNameGame()}"></td>
+          <td><img th:src="${image.getPathToSmallImage()}" th:data-img="${image.getPathToBigImage()}"></td>
+          <th class="buttons">
+            <a class="approved" type="button" th:id="${image.getId}" onclick=approvedImage(this.id)>Одобрить</a>
+            <a class="deleted" type="button" th:id="${image.getId}" onclick=deleteImage(this.id)>Удалить</a>
+          </th>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</main>
+
+<script>
+  function deleteImage(idPost){
+    $.ajax({
+      type: 'DELETE',
+      url: '/admin/deleteImage',
+      dataType: 'json',
+      contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+      data: {id : idPost},
+      success: function() {
+      },
+      error: function(XHR, textStatus) {
+        console.log(XHR, textStatus);
+      }
+    });
+  }
+
+  function approvedImage(idPost){
+    $.ajax({
+      type: 'POST',
+      url: '/admin/approvedImage',
+      dataType: 'json',
+      contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+      data: {id : idPost},
+      success: function() {
+      },
+      error: function(XHR, textStatus) {
+        console.log(XHR, textStatus);
+      }
+    });
+  }
+</script>
+<script>
+  $(document).ajaxStop(function(){
+    window.location.reload();
+  });
+
+  $(function (){
+    $('.tabs-item').click(function (){
+      if (!$(this).hasClass('active')){
+        $('.tabs-item').removeClass('active');
+        $(this).addClass('active');
+
+        $('.common-admin .container').removeClass().addClass('container').addClass($(this)[0].id);
+
+        document.location.hash = $(this)[0].id;
+      }
+    });
+    function popstate(){
+      let hash = document.location.hash.split('#').pop();
+      $('.tabs-item').removeClass('active');
+      if (hash === ''){
+        hash = 'users';
+      }
+      $('#'+hash).addClass('active');
+
+      $('.common-admin .container').removeClass().addClass('container').addClass(hash);
+      if (document.location.search === ''){
+        document.location.search = 'sort=id&order=asc&size=10'
+      }
+    }
+
+    popstate();
+    window.addEventListener('popstate',function (){
+      popstate();
+    });
+
+    $('.table th[data-bd]').click(function (){
+      let data_bd = $(this).attr('data-bd'),
+        size = 10,
+        sort;
+
+      if($(this).hasClass('asc')){
+        $('.table th').removeClass('desc, asc');
+        $(this).removeClass('asc').addClass('desc');
+        sort = 'desc';
+      } else {
+        $('.table th').removeClass('desc, asc');
+        $(this).removeClass('desc').addClass('asc');
+        sort = 'asc';
+      }
+      document.location.search = 'sort='+data_bd+'&order='+sort+'&size='+size;
+    });
+
+    let hash = document.location.hash.split('#').pop();
+    let sort = new URL(location.href).searchParams.get('sort');
+    let order = new URL(location.href).searchParams.get('order');
+    $('.common-top .'+ hash + '-tab th[data-bd="'+sort+'"]').addClass(order);
+    $('.common-admin .'+ hash + '-tab th[data-bd="'+sort+'"]').addClass(order);
+
+    $('.buttons span').click(function (){
+      let action;
+      if ($(this).hasClass('upload')){
+        action = 'upload';
+      }else if ($(this).hasClass('delete')){
+        action = 'delete';
+      } else {
+        return false;
+      }
+      let id = $(this).parent().parent().find('td').first().text();
+
+      let data = {action,id};
+
+      console.log(data);
+
+      // todo Add ajax post request
+
+    });
+  });
+</script>
+
+</body>
+</html>

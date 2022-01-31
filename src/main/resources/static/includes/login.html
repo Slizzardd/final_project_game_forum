@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Login Customer</title>
+</head>
+<body>
+<div class="login-form">
+    <form class="form-signin" method="post" action="/auth/login">
+        <h2 class="form-signin-heading">Войти</h2>
+
+        <label class="fw-placeholder">
+            <input type="text" name="username" class="fw-input form-control" required>
+            <span class="placeholder">Логин/Email</span>
+        </label>
+
+        <label class="fw-placeholder">
+            <input type="password" name="password" class="fw-input form-control" required>
+            <span class="placeholder">Пароль</span>
+        </label>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Войти</button>
+    </form>
+    <span class="come-to-register-form">Я ещё не зарегистрирован</span>
+</div>
+
+<div class="register-form">
+    <form action="sendler">
+        <h2 class="form-name">Регистрация</h2>
+
+        <label class="fw-placeholder">
+            <input type="text" name="login" class="fw-input">
+            <span class="placeholder">Логин</span>
+        </label>
+
+        <label class="fw-placeholder">
+            <input type="text" name="email" class="fw-input">
+            <span class="placeholder">Email</span>
+        </label>
+
+        <label class="fw-placeholder">
+            <input type="password" name="password" class="pass-0 fw-input">
+            <span class="placeholder">Пароль</span>
+        </label>
+
+        <label class="fw-placeholder">
+            <input type="password" name="password" class="pass-1 fw-input">
+            <span class="placeholder">Повторите пароль</span>
+        </label>
+
+        <button class="register-send">Регистрация</button>
+    </form>
+</div>
+
+<script>
+    $(function(){
+        $('.register-form .register-send').click(function(e){
+            e.preventDefault();
+
+            let data = JSON.stringify({
+                email: $('input[name=email]').val(),
+                login: $('input[name=login]').val(),
+                password: $('input.pass-0').val(),
+            });
+
+            if ($('.fw-placeholder input.pass-0').val() === $('label input.pass-1').val()){
+                $.ajax({
+                    type: 'POST',
+                    url: '/add_user',
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    data: data,
+                    success: function() {
+                        $('.register-form').addClass('success');
+                    },
+                    error: function(XHR, textStatus) {
+                        console.log(XHR, textStatus);
+                        $('.register-form').addClass('error');
+                    }
+                });
+            } else {
+                $('.register-form input[name=password]').addClass('wrong');
+            }
+        });
+
+        $('.come-to-register-form').click(function (){
+            $('body .float-box').removeClass('login').addClass('register');
+        });
+
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

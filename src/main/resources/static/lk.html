@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PrtSc.game</title>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/media-scroll.js"></script>
+  <script src="scripts/swiper.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" href="styles/jquery-ui.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="common-lk">
+
+<header id="header">
+  <div class="container">
+    <a href="/" class="logo">PrtSc.game</a>
+
+    <nav>
+      <ul>
+        <li><a href="top.html#users">Топ людей</a></li>
+        <li><a href="top.html#screens">Топ скринов</a></li>
+        <li class="admin" th:classappend="${isAdmin} ? 'true' : 'false'"><a href="admin.html">Админка</a></li>
+      </ul>
+
+      <form class="search" method="post" th:action="@{/search}">
+        <input type="search" placeholder="Search" aria-label="Search" id="imageName" name="query">
+        <button type="submit"></button>
+      </form>
+    </nav>
+
+    <a href="lk.html" class="login load--login" th:classappend="${isLogin} ? 'true' : 'false'">
+      <span class="login_false">Войти</span>
+      <span class="login_true">ЛК</span>
+    </a>
+
+  </div>
+</header>
+
+<main class="">
+  <div class="container lk">
+    <div class="lk-page">
+
+      <div class="lk-page_avatar">
+        <img th:src="${user.getAvatarUrl()}" alt="avatarka">
+      </div>
+
+      <div class="lk-page_wrapper profile">
+        <h1 class="profile-name" th:text="${user.getLogin()}"></h1>
+        <p class="profile-rank" th:text="${user.getRole()}"></p>
+        <p class="profile-email" th:text="${user.getEmail()}"></p>
+        <p class="profile-date">Дата регистрации: <br th:text="${user.getCreated()}"></p>
+
+
+        <ul class="profile-info">
+          <li class="profile-info-0">
+            <p>Лайков поставил: <span th:text="${user.getNumLikes()}"></span></p>
+          </li>
+          <li class="profile-info-1">
+            <p>Лайков принял: <span th:text="${user.getNumberLikesReceiver()}"></span></p>
+          </li>
+          <li class="profile-info-2">
+            <p>Скриншотов: <span th:text="${user.getNumImages()}"></span></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="buttons">
+      <span class="btn load--change_profile">Изменить профиль</span>
+      <span class="btn load--upload_image">Залить фотку</span>
+      <form action="/auth/logout" method="POST">
+        <button type="submit">Logout</button>
+      </form>
+    </div>
+
+
+  </div>
+  <div class="container post-wrapper">
+    <div class="post" th:data-item="${image.getId()}" th:each="image : ${images.getItems()}">
+      <img th:src="${image.getPathToSmallImage()}" th:alt="${image.getNameGame()}"
+           th:data-img="${image.getPathToBigImage()}">
+      <p th:text="${image.getNameGame()}"></p>
+      <span class="like" th:classappend="${image.isMeLiked()} ? liked : '' " th:text="${image.getNumLikes()}"></span>
+
+    </div>
+  </div>
+
+
+</main>
+
+</body>
+</html>
